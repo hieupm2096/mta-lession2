@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ItemType>GenericProject</ItemType>
+    <ProjectGuid>{B47EF41A-4173-4004-B092-77A54E95555B}</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Default|AnyCPU' ">
+    <OutputPath>.\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="index.html" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Book</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2 class="center">Sell your item here</h2>
+    <table>
+        <tr>
+            <td><strong>Item title</strong></td>
+            <td><strong>Here type the title of your book</strong></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input name="txtBookName" type="text"></td>
+        </tr>
+        <tr>
+            <td><strong>Item description</strong></td>
+            <td>
+                <p><strong>Describe the book details here, like Author, what the book is about, etc.</strong></p>
+                <p><strong>A good description is important because the buyer will read it before they buy your item.</strong></p>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <textarea name="txtBookDesc" cols="30" rows="10"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Item category</strong></td>
+            <td><strong>Select to which category your item belongs</strong></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <table>
+                    <tr>
+                        <td><input type="radio" name="txtBookCategory" id=""><label for="txtBookCategory">Kids</label></td>
+                        <td><input type="radio" name="txtBookCategory" id=""><label for="txtBookCategory">Software</label></td>
+                        <td><input type="radio" name="txtBookCategory" id=""><label for="txtBookCategory">Engineering</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="txtBookCategory" id=""><label for="txtBookCategory">Medical</label></td>
+                        <td><input type="radio" name="txtBookCategory" id=""><label for="txtBookCategory">Mythodology</label></td>
+                        <td><input type="radio" name="txtBookCategory" id=""><label for="txtBookCategory">Fitness</label></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Currency</strong></td>
+            <td><strong>All amounts will use this currency</strong></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <select name="txtCurrency" id="">
+                    <option value="USD">USD</option>
+                    <option value="VND">VND</option>
+                    <option value="EUR">EUR</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Price</strong></td>
+            <td>A buyer will purchase the item at this price</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="number" name="txtPrice" id=""></td>
+        </tr>
+        <tr>
+            <td><strong>Quantity</strong></td>
+            <td><strong>Mention the quantity below, you want each buyer to buy</strong></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="number" name="txtQuantity" id=""></td>
+        </tr>
+        <tr>
+            <td><strong>Payment charges</strong></td>
+            <td><strong>Here mention the moe of payment you would prefer to receive</strong></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <table>
+                    <tr>
+                        <td><input type="checkbox" name="txtPaymentCharges" id=""> <label for="txtPaymentCharges">Cheque</label></td>
+                        <td><input type="checkbox" name="txtPaymentCharges" id=""> <label for="txtPaymentCharges">Draft</label></td>
+                        <td><input type="checkbox" name="txtPaymentCharges" id=""> <label for="txtPaymentCharges">Credit Card</label></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <div class="center">
+        <input type="checkbox" name="txtTerm" id="">
+        <label for="txtTerm"><strong>I have read and agree to the terms and conditions of Creative dragon.com</strong></label>
+    </div>
+    <div class="center">
+        <input type="submit" value="Submit">
+        <input type="button" value="Reset">
+    </div>
+</body>
+</html>

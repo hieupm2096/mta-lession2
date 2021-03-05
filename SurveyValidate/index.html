@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do Survey</title>
+</head>
+<body>
+    Please, do our ITT APTECH SURVEY
+    <form name="form" action="" onsubmit="checkForm();return false">
+        <table width="500" cellspacing="2" cellpadding="2">
+            <tr>
+                <td><strong>Your name</strong></td>
+                <td><input type="text" name="name" id="name" onchange="checkForm" /></td>
+            </tr>
+            <tr>
+                <td><strong>Your email</strong></td>
+                <td><input type="text" name="mail" id="mail" /></td>
+            </tr>
+            <tr>
+                <td><strong>Your batch</strong></td>
+                <td>
+                    <select name="batch" id="batch">
+                        <option>ABC</option>
+                        <option>DEF</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Module you learn</strong></td>
+                <td>
+                    <input type="checkbox" name="check" id="check1" /> CF
+                    <input type="checkbox" name="check" id="check2" /> C
+                    <input type="checkbox" name="check" id="check3" /> HTML& HDJ
+                </td>
+            </tr>
+        </table>
+        <button type="submit">Complete your survey</button>
+    </form>
+</body>
+</html>
+
+<script language="javascript">
+
+    function checkForm() {
+        var name = document.forms["form"]["name"].value;
+        var iName = document.getElementById("name");
+        var iMail = document.getElementById("mail");
+        var iBatch = document.getElementById("batch");
+        if (!name) {
+          
+            iName.focus();
+              iName.style.border = "1px solid red";
+            alert("Bạn chưa nhập tên");
+            return
+        } else {
+            iName.style.border = "1px solid";
+        }
+        var mail = document.forms["form"]["mail"].value;
+        if (!mail) {
+            iMail.focus();
+            iMail.style.border = "1px solid red";
+
+            alert("Bạn chưa nhập mail");
+            return;
+        } else {
+            iMail.style.border = "1px solid";
+        }
+        var batch = document.forms["form"]["batch"].value;
+        if (!batch) {
+            iBatch.focus();
+            iBatch.style.border = "1px solid red";
+
+            alert("Bạn chưa nhập batch");
+            return;
+        } else {
+            iBatch.style.border = "1px solid";
+        }
+
+    }
+</script>
